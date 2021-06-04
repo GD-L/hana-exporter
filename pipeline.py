@@ -44,7 +44,7 @@ def read_input():
     file_path = filedialog.askopenfilename(filetypes = files)
     read_file = open(file_path,"r")
     sql_input = read_file.read()
-    return(sql_input)
+    return sql_input, file_path; 
 
 
 
@@ -87,7 +87,8 @@ def main(args):
     conn = connection(args.server,args.port,args.username,args.password)
     source = input("Would you like to read from a file? (y/n) \n")
     if source.upper() == "Y":
-        sql_query = read_input()
+        sql_query, file_path = read_input()
+        print("Reading file "+str(file_path))
     else: sql_query = input("Enter SQL Query:")
 
     data = execute_query(sql_query, conn)

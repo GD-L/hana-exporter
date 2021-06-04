@@ -30,6 +30,7 @@ MANIFEST
 scripts/
 Lib/*
 get-pip.py
+share*
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
