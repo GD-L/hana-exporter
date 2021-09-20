@@ -143,3 +143,10 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+!./code*
+*.csv
+*.sql
+.vscode
+/images
+/Include

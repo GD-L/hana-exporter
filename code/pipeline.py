@@ -1,6 +1,3 @@
-#import numpy as np
-#import pathlib2
-
 import argparse
 import sys
 from getpass import getpass

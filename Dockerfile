@@ -5,7 +5,7 @@ FROM python 3.7
 WORKDIR /code
 
 #Copy Dependencies
-COPY requirements.txt .
+COPY ./code/requirements.txt .
 
 #Install Dependencies
 RUN pip install -r requirements.txt
