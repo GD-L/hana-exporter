@@ -1,11 +1,10 @@
-import os
 import argparse
+import os
 from getpass import getpass
-from tkinter import Tk
-from tkinter import filedialog
+from tkinter import Tk, filedialog
 import pandas as pd
-from hdbcli import dbapi
 from dotenv import load_dotenv
+from hdbcli import dbapi
 
 load_dotenv()
 default_url = os.getenv("SERVER")

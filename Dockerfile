@@ -8,10 +8,10 @@ WORKDIR /code
 COPY ./code/requirements.txt .
 
 #Install Dependencies
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 #Copy python code to dir
-COPY ./code/pipeline.py .
+COPY ./code/pipeline.py /code
 
 #Excute on container start
 CMD ["python", "./pipeline.py"]
