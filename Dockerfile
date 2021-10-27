@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 COPY ./code/pipeline.py /code
 
 #Excute on container start
-CMD ["python", ""./pipeline.py"]
+CMD ["python", "./pipeline.py"]
