@@ -18,8 +18,6 @@ jobs:
         env:
           SUPPRESS_POSSUM: true
           GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_TOKEN }}
-          DEFAULT_BRANCH: main
-          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_ALL_CODEBASE: true
           VALIDATE_PYTHON_BLACK: false
-          VALIDATE_PYTHON_FLAKE8: false
           VALIDATE_PYTHON_ISORT: false
